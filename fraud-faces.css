@@ -1,0 +1,9 @@
+.fraud-faces{position:fixed;inset:0;z-index:8;pointer-events:none;overflow:hidden}
+.fraud-face{position:absolute;width:clamp(160px,19vw,320px);height:auto;opacity:0;filter:drop-shadow(0 10px 12px #0005);animation:fraud-peek 10s ease-in-out infinite;will-change:transform,opacity}
+.fraud-face:nth-child(1){left:-45px;top:20%;--tilt:14deg;animation-delay:-1s}
+.fraud-face:nth-child(2){right:-45px;top:48%;--tilt:-15deg;animation-delay:-4.3s}
+.fraud-face:nth-child(3){left:2%;bottom:-45px;--tilt:8deg;animation-delay:-7.6s}
+@keyframes fraud-peek{0%,7%,48%,100%{opacity:0;transform:translateY(65px) scale(.72) rotate(var(--tilt))}15%,37%{opacity:1;transform:translateY(0) scale(1) rotate(var(--tilt))}}
+@media(max-width:600px){.fraud-face{width:150px}.fraud-face:nth-child(1){left:-48px;top:20%}.fraud-face:nth-child(2){right:-48px;top:55%}.fraud-face:nth-child(3){left:-25px;bottom:-20px}}
+@media(prefers-reduced-motion:reduce){.fraud-face{animation:none;opacity:1;transform:rotate(var(--tilt))}}
+
