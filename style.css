@@ -29,3 +29,7 @@ header .wordmark,footer .wordmark{letter-spacing:.02em;font-weight:500;text-tran
 .all-star-source{display:inline-block;font-size:9px;letter-spacing:.04em;margin-top:14px;text-decoration:underline;text-underline-offset:3px;color:#7b663b}
 @media(max-width:800px){.all-star-honors{padding:18px 12px 14px}.all-star-heading{gap:9px}.all-star-heading h4{font-size:11px}.all-star-row{font-size:11px;gap:9px}}
 .achievement-point{display:block}.achievement-point+.achievement-point{margin-top:7px}
+
+/* Keep portrait heads inside the hero as desktop screens get wider. */
+@media(min-width:801px){.portraits img{height:112%;object-position:center bottom}.portraits .mitchell{height:119%}}
+
