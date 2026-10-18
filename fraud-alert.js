@@ -19,6 +19,21 @@
   dialog.querySelectorAll('button').forEach(button => button.addEventListener('click', () => dialog.close()));
 
 
-  dialog.showModal();
+  const date = new Date();
+  const today = `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`;
+  const showAlert = () => {
+    if (!dialog.open) dialog.showModal();
+    try { localStorage.setItem('zutony-fraud-alert-day', today); } catch {}
+  };
+  const replay = document.createElement('button');
+  replay.className = 'fraud-alert-replay';
+  replay.type = 'button';
+  replay.textContent = '🚨 Fraud alert';
+  replay.addEventListener('click', showAlert);
+  document.querySelector('footer').append(replay);
+  let seenToday = false;
+  try { seenToday = localStorage.getItem('zutony-fraud-alert-day') === today; } catch {}
+  if (!seenToday) showAlert();
 })();
+
 
