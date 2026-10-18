@@ -11,7 +11,7 @@
       <div class="fraud-alert-siren" aria-hidden="true">🚨</div>
       <h2 id="fraud-alert-title">FRAUD<br>ALERT!</h2>
       <p class="fraud-alert-stamp">TONY ZU IS ON FRAUD WATCH</p>
-      <a class="fraud-alert-go" href="receipts.html">TAKE ME TO FRAUD WATCH <span aria-hidden="true">↗</span></a>
+      <a class="fraud-alert-go" href="/fraud/">TAKE ME TO FRAUD WATCH <span aria-hidden="true">↗</span></a>
       <button class="fraud-alert-dismiss" type="button">I'll take my chances</button>
     </div><div class="fraud-alert-stripe" aria-hidden="true"></div>`;
   document.body.append(dialog);
@@ -35,5 +35,6 @@
   try { seenToday = localStorage.getItem('zutony-fraud-alert-day') === today; } catch {}
   if (!seenToday) showAlert();
 })();
+
 
 
