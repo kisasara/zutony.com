@@ -1,0 +1,14 @@
+.fraud-alert{width:min(530px,calc(100% - 40px));max-height:calc(100svh - 40px);padding:0;border:5px solid #141414;background:#fff129;color:#141414;box-shadow:14px 14px 0 #f32a29,24px 24px 0 #141414;transform:rotate(-3deg);overflow:auto;font-family:Arial,sans-serif}
+.fraud-alert::backdrop{background:#080b08b8;backdrop-filter:blur(5px)}
+.fraud-alert-stripe{height:22px;background:repeating-linear-gradient(135deg,#141414 0 16px,#fff129 16px 32px)}
+.fraud-alert-close{position:absolute;right:10px;top:32px;width:40px;height:40px;border:2px solid #141414;background:#fff129;color:#141414;font-size:32px;line-height:1;cursor:pointer;z-index:1}
+.fraud-alert-body{text-align:center;padding:28px 32px 24px}
+.fraud-alert-kicker{font:800 10px/1.5 Arial,sans-serif;letter-spacing:.14em;margin:0 35px 12px}
+.fraud-alert-siren{font-size:58px;line-height:1.2;transform:rotate(9deg)}
+.fraud-alert h2{font:1000 clamp(58px,12vw,92px)/.85 Impact,'Arial Black',Arial,sans-serif;letter-spacing:-.035em;color:#e52320;margin:18px 0 24px;text-shadow:3px 3px 0 #141414}
+.fraud-alert-stamp{display:inline-block;border:3px solid #e52320;color:#c71916;padding:8px 10px;transform:rotate(3deg);font-size:12px;font-weight:900;letter-spacing:.06em;margin:0 0 26px}
+.fraud-alert-go{display:flex;align-items:center;justify-content:center;gap:18px;background:#141414;color:#fff129;padding:19px 14px;font-size:13px;font-weight:900;box-shadow:5px 5px 0 #e52320}
+.fraud-alert-go:hover{background:#e52320;color:white;box-shadow:5px 5px 0 #141414}
+.fraud-alert-dismiss{display:block;margin:20px auto 0;border:0;border-bottom:1px solid #141414;background:none;color:#141414;padding:4px;font-size:12px;cursor:pointer}
+.fraud-alert :focus-visible{outline:3px solid #e52320;outline-offset:4px}
+@media(max-width:480px){.fraud-alert{transform:rotate(-2deg);box-shadow:7px 7px 0 #f32a29,12px 12px 0 #141414}.fraud-alert-body{padding:23px 18px 20px}.fraud-alert-kicker{font-size:8px}.fraud-alert-go{font-size:11px}}
