@@ -14,3 +14,5 @@
 @media(max-width:480px){.fraud-alert{transform:rotate(-2deg);box-shadow:7px 7px 0 #f32a29,12px 12px 0 #141414}.fraud-alert-body{padding:23px 18px 20px}.fraud-alert-kicker{font-size:8px}.fraud-alert-go{font-size:11px}}
 .fraud-alert-replay{font:inherit;font-size:12px;color:#fff129;background:none;border:1px solid #fff12966;padding:10px 14px;cursor:pointer}
 
+.fraud-alert-close{min-width:44px;min-height:44px}.fraud-alert-dismiss{min-height:44px}.fraud-alert-replay{min-height:44px}
+@media(max-height:500px){.fraud-alert{transform:none;max-height:calc(100svh - 24px);box-shadow:7px 7px 0 #f32a29}.fraud-alert-body{padding:12px 24px}.fraud-alert-kicker{margin:0 38px 8px;font-size:8px}.fraud-alert-siren{display:none}.fraud-alert h2{font-size:48px;line-height:.9;margin:10px 0}.fraud-alert h2 br{display:none}.fraud-alert-stamp{margin-bottom:12px;font-size:10px}.fraud-alert-go{padding:12px}.fraud-alert-dismiss{margin-top:8px}.fraud-alert-stripe{height:14px}.fraud-alert-close{top:20px}}
