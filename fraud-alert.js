@@ -1,6 +1,6 @@
 (() => {
-  const key = 'zutony-fraud-alert-seen';
-  try { if (sessionStorage.getItem(key)) return; } catch {}
+
+
   const dialog = document.createElement('dialog');
   dialog.className = 'fraud-alert';
   dialog.setAttribute('aria-labelledby', 'fraud-alert-title');
@@ -15,9 +15,10 @@
       <button class="fraud-alert-dismiss" type="button">I'll take my chances</button>
     </div><div class="fraud-alert-stripe" aria-hidden="true"></div>`;
   document.body.append(dialog);
-  const remember = () => { try { sessionStorage.setItem(key, '1'); } catch {} };
+
   dialog.querySelectorAll('button').forEach(button => button.addEventListener('click', () => dialog.close()));
-  dialog.addEventListener('close', remember);
-  dialog.querySelector('a').addEventListener('click', remember);
+
+
   dialog.showModal();
 })();
+
