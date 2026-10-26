@@ -33,3 +33,5 @@ header .wordmark,footer .wordmark{letter-spacing:.02em;font-weight:500;text-tran
 /* Keep portrait heads inside the hero as desktop screens get wider. */
 @media(min-width:801px){.portraits img{height:112%;object-position:center bottom}.portraits .mitchell{height:119%}}
 
+
+.membership-line{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:11px;color:#60675c;margin:0 0 14px;line-height:1.7}.new-player-badge{display:inline-block;background:#2d4734;color:#f3f0e9;padding:3px 9px;text-transform:uppercase;letter-spacing:.12em;font-size:9px;font-weight:600}.alumni{background:#d6d7d0;border-top:1px solid #20251f22}.roster-updated{font-size:11px;color:#60675c;margin:-20px 0 35px;line-height:1.7}.roster-updated a{text-decoration:underline;text-underline-offset:4px}

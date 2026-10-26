@@ -1,0 +1,42 @@
+{
+  "checked": "2026-10-26",
+  "source": "https://basketball.fantasysports.yahoo.com/nba/106209/transactions?transactionsfilter=all&mid=1",
+  "newForDays": 14,
+  "players": {
+    "kristaps-porzingis": {
+      "joined": "2026-10-20",
+      "method": "Waivers"
+    },
+    "sam-merrill": {
+      "joined": "2026-10-22",
+      "left": "2026-10-23",
+      "method": "Free agent"
+    },
+    "brook-lopez": {
+      "joined": "2026-10-23",
+      "method": "Free agent"
+    },
+    "duncan-robinson": {
+      "joined": "2026-10-23",
+      "method": "Free agent"
+    },
+    "sam-hauser": {
+      "joined": "2026-10-26",
+      "method": "Free agent"
+    },
+    "kyle-kuzma": {
+      "joined": "2026-10-26",
+      "method": "Free agent"
+    },
+    "reed-sheppard": {
+      "joined": "draft",
+      "left": "2026-10-23",
+      "method": "Draft"
+    },
+    "nikola-vucevic": {
+      "joined": "draft",
+      "left": "2026-10-22",
+      "method": "Draft"
+    }
+  }
+}
